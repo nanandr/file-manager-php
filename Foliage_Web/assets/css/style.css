@@ -1,0 +1,357 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    color: #404040;
+    font-family: sans-serif;
+    margin: auto;
+}
+@media only screen and (max-width: 400px) {
+    .header-title{
+        display: none;
+    }
+    .header-right{
+        margin-top: 24px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .column-hideable{
+        display: none;
+    }
+    .column-resize{
+        width: 5%;
+    }
+    .upload-form{
+        display: block;
+        width: 300px;
+        right: 100px;
+    }
+    .file-manager{
+        padding-bottom: 120px;
+    }
+    .header-right img{
+        width: 32px;
+    }
+    .header-right{
+        margin-top: 32px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .upload-form{
+        display: none;
+        right: 92px;
+    }
+    .header-right img{
+        width: 24px;
+    }
+    .header-right{
+        margin-top: 20px;
+    }
+    .icon-hideable{
+        display: none;
+    }
+}
+hr{
+    background-color: #F10080;
+    height: 1px;
+}
+a{
+    text-decoration: none;
+    color: #303AB8;
+}
+a:hover{
+    color: #F10080;
+}
+.header{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1080px;
+    max-width: 100%;
+    height: 72px;
+    margin: auto;
+    box-sizing: border-box;
+    color: #303AB8;
+}
+.header-left{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.header-left li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #404040;
+}
+.header-left h1{
+    color: #303AB8;
+    padding: 0px;
+    margin: 0px;
+}
+.header-right{
+    float: right;
+    margin-right: 20px;
+    padding: 0px;
+}
+.header-right li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-left img{
+    width: 72px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.header-right img{
+    box-sizing: border-box;
+    margin-left: 14px;
+}
+.container{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.home{
+    width: 1080px;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.home h1{
+    color:#F10080;
+}
+.err{
+    text-align: center;
+    width: 1080px;
+    max-width: 100%;
+    height: 560px;
+    margin: auto;   
+    padding: 20px;
+}
+.err h1{
+    font-size: 144px;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    width: 1080px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 72px;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.nav-list{
+    height: 48px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #303AB8;
+}
+.nav-list li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 60px;
+}
+.nav img{
+    width: 48px;
+}
+.content{
+    width: 1080px;
+    max-width: 100%;
+    min-height: 720px;
+    margin: auto;
+}
+.folder{
+    float: right;
+}
+.footer{
+    margin: auto;
+    padding: 10px;
+    width: 1080px;
+    max-width: 100%;
+    text-align: center;
+    color: #F10080;
+    background-color: white;
+}
+.file-manager{
+    width: 1080px;
+    max-width: 100%;
+    margin: auto;
+}
+.file-manager img{
+    width: 28px;
+}
+.file-manager tr th{
+    text-align: left;
+    background-color: white;
+    position: sticky;
+    top: 68px;
+    border-bottom: solid 1px #F10080;
+    border-top: solid 1px #F10080;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.file-manager td{
+    height: 24px;
+    vertical-align: middle;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.login{
+    margin-top: 160px;
+}
+.login-head{
+    text-align: center;
+    color: #303AB8;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.login-head h1{
+    text-align: center;
+    font-size: 64px;
+    color: #F10080;
+    margin: 0px;
+}
+.login-fail{
+    text-align: center;
+    color: #F10080;
+}
+.upload:hover .upload-form{
+    display: block;
+}
+.upload-form{
+    position: fixed;
+    bottom: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: solid 1px #404040;
+    box-shadow: #404040 0 0 5px 0;
+}
+.upload-form table tr{
+    margin-bottom: 100px;
+}
+.upload-form input{
+    width: 140px;
+}
+.rename-form{
+    min-height: 130px;
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    margin-top: -70px;
+    margin-left: -150px;
+    background-color: white;
+    box-shadow: #404040 0 0 5px 0;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.message{
+    text-align: center;
+}
+.rename-form table{
+    margin: auto;
+    text-align: center;
+}
+.rename-form h3{
+    margin: 0;
+    padding: 0;
+}
+#rename-button{
+    display: none;
+}
+
+input[type="file"]{
+    display: none;
+}
+input[name="id"]{
+    display: none;
+}
+input[name="type"]{
+    display: none;
+}
+input[name="owner"]{
+    display: none;
+}
+input[name="page"]{
+    display: none;
+}
+input[name="parent"]{
+    display: none;
+}
+input[name="old_name"]{
+    display: none;
+}
+.upload-file:hover{
+    cursor: pointer;
+    color: #F10080;
+}
+.rename-form input{
+    margin-bottom: 16px;
+}
+.rename-button{
+    box-sizing: border-box;
+    padding: 15px;
+    
+}
+.rename-button:hover{
+    cursor: pointer;
+    color: #F10080;
+}
+.upload-button button{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 72px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 62px;
+    background-color: #F10080;
+    color: white;
+    border: 0px;
+    vertical-align: middle;
+    box-shadow: #404040 0 0 5px 0;
+}
+.upload-button button:hover{
+    cursor: pointer;
+}
+.upload-form h1{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+input{
+    width: 240px;
+    height: 32px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.input2 input{
+    width: 480px;
+}
+button{
+    width: 240px;
+    box-sizing: border-box;
+}
+.signup{
+    text-align: center;
+}
+.home img{
+    margin: auto;
+    width: 1080px;
+    max-width: 100%;
+}
+.home img:hover{
+    cursor: pointer;
+}
